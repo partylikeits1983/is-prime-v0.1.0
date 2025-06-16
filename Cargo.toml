@@ -1,0 +1,27 @@
+[package]
+name = "is-prime"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# Build this crate as a self-contained, C-style dynamic library
+# This is required to emit the proper Wasm module type
+crate-type = ["cdylib"]
+
+[dependencies]
+# Use a tiny allocator in place of the default one, if we want
+# to make use of types in the `alloc` crate, e.g. String. We
+# don't need that now, but it's good information to have in hand.
+#miden-sdk-alloc = "0.0.5"
+
+# When we build for Wasm, we'll use the release profile
+[profile.release]
+# Explicitly disable panic infrastructure on Wasm, as
+# there is no proper support for them anyway, and it
+# ensures that panics do not pull in a bunch of standard
+# library code unintentionally
+panic = "abort"
+# Enable debug information so that we get useful debugging output
+debug = true
+# Optimize the output for size
+opt-level = "z"
