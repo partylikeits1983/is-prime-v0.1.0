@@ -1,4 +1,4 @@
-proc.rust_begin_unwind
+proc._RNvCs95KLPZDDxvS_7___rustc17rust_begin_unwind
     drop
     push.0
     assert
@@ -202,7 +202,7 @@ export.is_prime
                             push.1048604
                             trace.240
                             nop
-                            exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking11panic_const23panic_const_rem_by_zero17hbbf9192e4afd28d8E
+                            exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking11panic_const23panic_const_rem_by_zero17h9f1c1fbc7514bb3bE
                             trace.252
                             nop
                             push.1
@@ -222,7 +222,7 @@ export.is_prime
                                 push.1048588
                                 trace.240
                                 nop
-                                exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking11panic_const23panic_const_rem_by_zero17hbbf9192e4afd28d8E
+                                exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking11panic_const23panic_const_rem_by_zero17h9f1c1fbc7514bb3bE
                                 trace.252
                                 nop
                                 push.1
@@ -259,7 +259,7 @@ export.entrypoint
     nop
 end
 
-proc._ZN4core9panicking9panic_fmt17he306018bf71f8e67E
+proc._ZN4core9panicking9panic_fmt17h323a3d24b325ebeeE
     push.1048576
     u32divmod.4
     swap.1
@@ -353,14 +353,14 @@ proc._ZN4core9panicking9panic_fmt17he306018bf71f8e67E
     u32wrapping_add
     trace.240
     nop
-    exec.::root_ns:root@1.0.0::is_prime::rust_begin_unwind
+    exec.::root_ns:root@1.0.0::is_prime::_RNvCs95KLPZDDxvS_7___rustc17rust_begin_unwind
     trace.252
     nop
     push.0
     assert
 end
 
-proc._ZN4core9panicking11panic_const23panic_const_rem_by_zero17hbbf9192e4afd28d8E
+proc._ZN4core9panicking11panic_const23panic_const_rem_by_zero17h9f1c1fbc7514bb3bE
     push.1048576
     u32divmod.4
     swap.1
@@ -462,7 +462,7 @@ proc._ZN4core9panicking11panic_const23panic_const_rem_by_zero17hbbf9192e4afd28d8
     u32wrapping_add
     trace.240
     nop
-    exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking9panic_fmt17he306018bf71f8e67E
+    exec.::root_ns:root@1.0.0::is_prime::_ZN4core9panicking9panic_fmt17h323a3d24b325ebeeE
     trace.252
     nop
     push.0
